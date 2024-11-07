@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS `schedule` (
   INDEX `fk_schedule_user_idx` (`user_id` ASC) VISIBLE,
   CONSTRAINT `fk_schedule_user`
     FOREIGN KEY (`user_id`)
-    REFERENCES `mydb`.`user` (`id`)
+    REFERENCES `schedule_management`.`user` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
